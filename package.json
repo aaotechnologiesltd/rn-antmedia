@@ -2,13 +2,7 @@
   "name": "rn-antmedia",
   "version": "1.2.1-beta",
   "description": "Port of webrtc-adaptor (AntMedia) to react-native using react-native-webrtc",
-  "source": "src/index.ts",
-  "main": "dist/index.js",
-  "module": "dist/rn-antmedia.esm.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "src/index.ts",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
@@ -74,7 +68,6 @@
     "tsdx": "0.11.0",
     "typescript": "^4.1.3"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.1",
     "react-native": "^0.63.4",
