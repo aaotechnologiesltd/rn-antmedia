@@ -665,6 +665,10 @@ function useAntMedia(params: Params) {
   }, [isPlayMode, getUserMedia, mediaConstraints]);
 
   useEffect(() => {
+    if (!url) {
+      return;
+    }
+
     const ws = new WebSocket(url) as CustomWebSocket;
     let pingTimerId = -1;
 
