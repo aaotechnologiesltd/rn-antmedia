@@ -746,6 +746,7 @@ function useAntMedia(params: Params) {
     };
 
     return () => {
+      ws.close();
       ws.onopen = null;
       ws.onmessage = null;
       ws.onerror = null;
