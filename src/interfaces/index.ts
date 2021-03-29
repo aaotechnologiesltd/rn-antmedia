@@ -20,6 +20,7 @@ export interface Params {
   bandwidth?: number;
   debug?: boolean;
   onlyDataChannel?: boolean;
+  playMode?: boolean;
 }
 
 export type CustomWebSocket = WebSocket & { sendJson: (dt: any) => void };

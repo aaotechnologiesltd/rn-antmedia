@@ -37,11 +37,12 @@ function useAntMedia(params: Params) {
     bandwidth: bwh,
     debug,
     onlyDataChannel,
+    playMode
   } = params;
   const [roomName, setRoomName] = useState('');
   const [isMuted, setIsMuted] = useState(false);
   const [isTurnedOf, setIsTurnedOf] = useState(false);
-  const [isPlayMode, setIsPlayMode] = useState(false);
+  const [isPlayMode, setIsPlayMode] = useState(playMode || false);
   const [remoteStreams, setRemoteStreams] = useState<RemoteStreams>({});
   const [connected, setConnected] = useState(false);
   const localStream = useRef<null | MediaStream>(null);
